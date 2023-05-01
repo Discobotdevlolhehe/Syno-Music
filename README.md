@@ -5,11 +5,11 @@
 
 # How to setup
 > Requirements: 
->> 4 working lavalinks 
->> Bot token 
->> Mongo URL 
->> Spotify Client ID and secret 
->> Discord webhook 
+>> 4 working lavalinks, 
+>> Bot token, 
+>> Mongo URL, 
+>> Spotify Client ID and secret, 
+>> Discord webhook,
 
 > Fill out the bot config
 >> got to `./botconfig/config.json` and put your Mongo URL in Mongo,
