@@ -16,6 +16,7 @@
 >> Put your 4 lavalinks in the nodes area
 >>Spotify client ID and Secret in lines 37 and 38
 >> At the bottom of the file fill in the owner ID section
+>> Change the prefix. Default `;;`
 
 > Configure embeds:
 >> Got to `./botconfig/embed.json` and put whatever you want. It's optional
