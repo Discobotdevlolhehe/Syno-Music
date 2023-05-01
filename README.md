@@ -1,7 +1,6 @@
 # syno
 
-- the best music bot of the current day. Uses erela.js and has Slash Commands
-
+- the best music bot of the current day. Uses erela.js and hasa lot of filters
 #
 
 # How to setup
