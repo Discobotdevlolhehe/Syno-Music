@@ -13,7 +13,7 @@ const ee = require(`./botconfig/embed.json`);
 const fetch = require("node-fetch");
 const mongoose = require("mongoose")
 const { findOrCreateGuild } = require("./handlers/functions")
-const web = new WebhookClient({ url: 'https://discord.com/api/webhooks/906149279343722537/X6vSmjP0dhd3VqjmyehvA2myROO4pFzo-9Lw3QlqVhIUdczDNTUFtpri6-5oB1iUxwzQP' }); 
+const web = new WebhookClient({ url: '' }); 
 const { readdirSync } = require("fs")
 
 const intents = new Intents([ 
@@ -34,7 +34,7 @@ const client = new Discord.Client({
     presence: {
         status: "online",
         activities: [{
-        name: "@Gravel Music",
+        name: "@Syno Music | Unknown Leaf",
         type: "WATCHING"
         }]
     },
@@ -72,7 +72,7 @@ mongoose.connect(config.mongo, {
   }).then(() => {
   //login to the bot
   keepAlive();
-  client.login("OTM0MzEzNDY4NjE2NjcxMzM0.YeuROQ.k6GsPxp0epvV_wCH2uL8IP5K9Tc")
+  client.login(process.env.token)
 
 
 client.on("voiceStateUpdate", async (oldState, newState) => {
@@ -95,9 +95,9 @@ client.on('interactionCreate', async interaction => {
         const embed1 = new MessageEmbed()
         .setThumbnail(ee.avatara)
         .addField(`${emoji.categories.Playlist} CustomPlaylist - (10)`, `\`pl-addcurrent\`, \`pl-addqueue\`, \`pl-create\`, \`pl-delete\`, \`pl-info\`, \`pl-list\`, \`pl-load\`, \`pl-playshuffle\`, \`pl-removedupes\`, \`pl-removetrack\`\n\n[Invite](${config.links.opbotinv}) ● [Support Server](${config.links.server})`)
-        .setDescription("● To get help on a specific command type `Gravel Music help <command>`!")
+        .setDescription("● To get help on a specific command type `Syno Music help <command>`!")
         .setColor("#303037")
-        .setFooter("Gravel Music", ee.avatara)
+        .setFooter("Syno Music", ee.avatara)
         .setTimestamp()
         interaction.reply({ embeds: [embed1], ephemeral: true })
         return
@@ -107,9 +107,9 @@ client.on('interactionCreate', async interaction => {
         const embed2 = new MessageEmbed()
         .setThumbnail(ee.avatara)
         .addField(`${emoji.categories.AstrozMusic} Filter - (15)`, `\`8d\`, \`bassboost\`, \`chipmunk\`, \`cleareq\`, \`clearfilter\`, \`darthvader\`, \`equalizer\`, \`nightcore\`, \`pitch\`, \`rate\`, \`slowmo\`, \`speed\`, \`tremolo\`, \`vibrato\`, \`vibrate\`\n\n[Invite](${config.links.opbotinv}) ● [Support Server](${config.links.server})`)
-        .setDescription("● To get help on a specific command type `Gravel Music help <command>`!")
+        .setDescription("● To get help on a specific command type `Syno Music help <command>`!")
         .setColor('#303037')
-        .setFooter("Gravel Music", ee.avatara)
+        .setFooter("Syno Music", ee.avatara)
         .setTimestamp()
         interaction.reply({ embeds: [embed2], ephemeral: true })
         return
@@ -119,9 +119,9 @@ client.on('interactionCreate', async interaction => {
           const embed3 = new MessageEmbed()
         .setThumbnail(ee.avatara)
         .addField(`${emoji.categories.Info} Info - (7)`, `\`djmode\`, \`help\`, \`invite\`, \`message\`, \`policy\`, \`ping\`, \`stats\`, \`uptime\`\n\n[Invite](${config.links.opbotinv}) ● [Support Server](${config.links.server})`)
-        .setDescription("● To get help on a specific command type `@Gravel Music help <command>`!")
+        .setDescription("● To get help on a specific command type `@Syno Music help <command>`!")
         .setColor('#303037')
-        .setFooter("Gravel Music", ee.avatara)
+        .setFooter("Syno Music", ee.avatara)
         .setTimestamp()
         interaction.reply({ embeds: [embed3], ephemeral: true })
         return
@@ -133,9 +133,9 @@ client.on('interactionCreate', async interaction => {
          const embed4 = new MessageEmbed()
         .setThumbnail(ee.avatara)
         .addField(`${emoji.categories.Playing} Music - (27)`, `\`autoplay\`, \`back\`, \`clearqueue\`, \`forward\`, \`grab\`, \`join\`, \`loop\`, \`movebot\`, \`moveme\`, \`movetrack\`, \`nowplaying\`, \`pause\`, \`play\`, \`playtop\`, \`queue\`, \`remove\`, \`replay\`, \`resume\`, \`rewind\`, \`search\`, \`seek\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\`, \`voteskip\`\n\n[Invite](${config.links.opbotinv}) ● [Support Server](${config.links.server})`)
-        .setDescription("● To get help on a specific command type `@Gravel Music help <command>`!")
+        .setDescription("● To get help on a specific command type `@Syno Music help <command>`!")
         .setColor('#303037')
-        .setFooter("Gravel Music", ee.avatara)
+        .setFooter("Syno Music", ee.avatara)
         .setTimestamp()
         interaction.reply({ embeds: [embed4], ephemeral: true })
         return
@@ -149,9 +149,9 @@ client.on('interactionCreate', async interaction => {
         const embed6 = new MessageEmbed()
         .setThumbnail(ee.avatara)
         .addField(`${emoji.categories.Settings} Settings - (11)`, `\`24/7\`, \`adddj\`, \`announce\`, \`developer\`, \`prefix\`, \`removedj\`, \`reset\`, \`settings\`, \`setdjonly\`, \`pruning\`\n\n[Invite](${config.links.opbotinv}) ● [Support Server](${config.links.server})`)
-        .setDescription("● To get help on a specific command type `@Gravel Music help <command>`!")
+        .setDescription("● To get help on a specific command type `@Syno Music help <command>`!")
         .setColor('#303037')
-        .setFooter("Gravel Music", ee.avatara)
+        .setFooter("Syno Music", ee.avatara)
         .setTimestamp()
         interaction.reply({ embeds: [embed6], ephemeral: true })
         return
