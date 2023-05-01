@@ -4,26 +4,28 @@
 
 #
 
-# How to setuP
+# How to setup
 > Requirements: 
 >> 4 working lavalinks
->> bot token
->> mongo URL
+>> Bot token
+>> Mongo URL
 >> Spotify Client ID and secret
 >> Discord webhook
 
-> Fill out bot config
->> got to `./botconfig/config.json` and put your mongo URL in mongo,
->> put your 4 lavalinks in the nodes area
->>Spotify client ID and Secret in line 37 and 38
->> at the bottom of the file fill in the owner ID section
+> Fill out the bot config
+>> got to `./botconfig/config.json` and put your Mongo URL in Mongo,
+>> Put your 4 lavalinks in the nodes area
+>>Spotify client ID and Secret in lines 37 and 38
+>> At the bottom of the file fill in the owner ID section
 
 > Configure embeds:
->> Got to `./botconfig/embed.json` and put whatever you want. Its opltional
+>> Got to `./botconfig/embed.json` and put whatever you want. It's optional
 
 > Webhook
->> Go to `index.js` line 16 put in your entire webhook link
+>> Go to `index.js` line 16 and put in your entire webhook link
 
+> bot token
+>> Rename exmple.env to .env and in that file replace your token with your bot's token
 > install packages
 >> npm i
 
