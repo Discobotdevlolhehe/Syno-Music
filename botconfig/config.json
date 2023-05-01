@@ -1,0 +1,65 @@
+{
+  "mongo": "mongodb+srv://Abhinav:Abhinav123*@cluster0.zgneu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "prefix": ";;",
+  "clientsettings": {
+    "nodes": [
+      {
+        "host": "lavalinknl.ml",
+        "port": 2333,
+        "password": "Racoon",
+        "retryDelay": 4000,
+        "secure": true
+      },
+       {
+        "host": "disbotlistlavalink.ml",
+        "port": 443,
+        "password": "LAVA",
+        "retryDelay": 4000,
+        "secure": true
+      },
+      {
+        "host": "lavalink-repl.parasop.repl.co",
+        "port": 443,
+        "password": "youshallnotpass",
+        "retryDelay": 4000,
+        "secure": true
+      },
+      {
+        "host": "main.paras888.repl.co",
+        "port": 443,
+        "password": "youshallnotpass",
+        "retryDelay": 4000,
+        "secure": true 
+      }
+    ]
+  },
+  "spotify": {
+    "clientSecret": "bdbfea29444c451d95c03581480e34ae",
+    "clientID": "be8b7b2b80c5464bb85bb30bb632e236"
+  },
+  "settings": {
+    "COMMENT": "time_delay 0 === insta leave",
+    "progressbar_emoji": ":<:s_progress:866946355891929098>",
+    "leaveOnEmpty_Channel": {
+      "enabled": false,
+      "time_delay": 180000
+    },
+    "LeaveOnEmpty_Queue": {
+      "enabled": false,
+      "time_delay": 180000
+    },
+    "selfDeaf": true,
+    "serverDeaf": true
+  },
+  "links": {
+    "server": "https://discord.gg/5uBN8Bpg7K  ",
+    "opmusicinv": "https://discord.com/api/oauth2/authorize?client_id=905382190085459988&permissions=36990048&scope=bot",
+  },
+  "ownerIDS": [
+    "841901577811001367",
+    "841901577811001367",
+    "841901577811001367",
+    "764347024253386754",
+      "764347024253386754"
+  ]
+}
